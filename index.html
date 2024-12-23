@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Typing Speed Test</h1>
+
+      <!-- Start Button -->
+      <button id="start-btn" class="btn">Start Game</button>
+
+      <!-- Typing Test Area (Hidden Initially) -->
+      <div id="test-area" style="display: none">
+        <div id="timer" class="timer">
+          Time Left: <span id="time-left">30</span> seconds
+        </div>
+        <div id="quote-container">
+          <p id="quote-text">Start typing the quote shown here...</p>
+        </div>
+        <textarea
+          id="input-field"
+          placeholder="Start typing..."
+          disabled
+        ></textarea>
+        <div id="score-container">
+          <div>
+            <strong>Words Typed:</strong> <span id="words-typed">0</span>
+          </div>
+          <div><strong>WPM:</strong> <span id="wpm">0</span></div>
+          <div><strong>Accuracy:</strong> <span id="accuracy">100%</span></div>
+        </div>
+        <button id="restart-btn" class="btn" style="display: none">
+          Restart
+        </button>
+        <button id="submit-btn" class="btn" style="display: none">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
